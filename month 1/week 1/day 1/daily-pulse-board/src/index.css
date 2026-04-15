@@ -1,0 +1,42 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2e2621;
+  background:
+    radial-gradient(circle at top, rgba(255, 227, 196, 0.65), transparent 32%),
+    linear-gradient(180deg, #f7eee5 0%, #f4f7f2 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+h1,
+h2,
+h3,
+p {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2b211b;
+}
+
+#root {
+  min-height: 100vh;
+}

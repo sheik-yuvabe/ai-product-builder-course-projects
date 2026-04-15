@@ -1,0 +1,191 @@
+.app-shell {
+  padding: 48px 20px 64px;
+}
+
+.hero-panel {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: #9a563a;
+}
+
+.hero-panel h1 {
+  margin-bottom: 16px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+.board-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.card-column,
+.summary-panel {
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 18px 50px rgba(74, 47, 30, 0.12);
+}
+
+.card-column {
+  background: rgba(255, 251, 245, 0.94);
+  border: 1px solid rgba(186, 136, 98, 0.2);
+}
+
+.section-copy {
+  margin-bottom: 20px;
+  color: #5f544e;
+}
+
+.pulse-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.pulse-card {
+  width: 100%;
+  text-align: left;
+  border-radius: 20px;
+  border: 1px solid #d9c7b5;
+  background: #fffdf9;
+  padding: 18px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pulse-card:hover {
+  transform: translateY(-2px);
+  border-color: #d28152;
+  box-shadow: 0 14px 30px rgba(210, 129, 82, 0.14);
+}
+
+.pulse-card--active {
+  border-color: #a54f2b;
+  box-shadow: 0 18px 35px rgba(165, 79, 43, 0.16);
+  background: #fff6ef;
+}
+
+.pulse-card__label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9a563a;
+}
+
+.pulse-card h3,
+.summary-panel h2,
+.tip-box h3 {
+  margin: 0 0 10px;
+}
+
+.pulse-card p,
+.summary-text,
+.tip-box p {
+  margin: 0;
+  color: #5f544e;
+}
+
+.summary-panel {
+  background: linear-gradient(160deg, #fdf4e7 0%, #fffefe 55%, #eef8f2 100%);
+  border: 1px solid rgba(117, 104, 82, 0.15);
+}
+
+.summary-panel--focused {
+  background: linear-gradient(160deg, #fff5e6 0%, #fffef9 55%, #f4f8ee 100%);
+}
+
+.summary-panel--steady {
+  background: linear-gradient(160deg, #fdf7ea 0%, #fffefb 55%, #edf8f5 100%);
+}
+
+.summary-panel--recharge {
+  background: linear-gradient(160deg, #fff6ef 0%, #fffdfc 55%, #eef4fb 100%);
+}
+
+.status-label {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  color: #7b6b5a;
+}
+
+.pulse-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+
+.pulse-badge--focused {
+  background: #ffe2b8;
+  color: #7a3e1d;
+}
+
+.pulse-badge--steady {
+  background: #dff1e9;
+  color: #235846;
+}
+
+.pulse-badge--recharge {
+  background: #dde8fb;
+  color: #2d4f7a;
+}
+
+.tip-button {
+  margin-top: 22px;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  background: #1f4c43;
+  color: #ffffff;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.tip-button:hover {
+  transform: translateY(-1px);
+}
+
+.tip-box {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(49, 77, 68, 0.12);
+}
+
+@media (max-width: 860px) {
+  .app-shell {
+    padding: 32px 16px 48px;
+  }
+
+  .board-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .card-column,
+  .summary-panel {
+    padding: 22px;
+  }
+}

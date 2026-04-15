@@ -1,0 +1,174 @@
+.page {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 56px;
+}
+
+.hero {
+  margin-bottom: 28px;
+}
+
+.eyebrow,
+.section-label,
+.ticket-label,
+.meta-label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.eyebrow,
+.section-label,
+.ticket-label {
+  color: #8f4d25;
+}
+
+.hero-copy,
+.section-copy,
+.coach-note,
+.ticket-email,
+.reason-box p {
+  color: #5f5048;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 24px;
+}
+
+.panel {
+  border: 1px solid rgba(140, 98, 54, 0.18);
+  border-radius: 28px;
+  background: rgba(255, 251, 245, 0.94);
+  box-shadow: 0 18px 60px rgba(114, 81, 44, 0.1);
+}
+
+.form-panel {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field span {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2f241d;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(140, 98, 54, 0.22);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: #fffdf9;
+  color: #2f241d;
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 3px solid rgba(235, 164, 92, 0.24);
+  border-color: #cb7a33;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #c96b2c, #ef9c56);
+  color: #fff9f1;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(201, 107, 44, 0.2);
+}
+
+.coach-note {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.ticket-panel {
+  padding: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(244, 198, 138, 0.5), transparent 30%),
+    linear-gradient(180deg, #fff4df 0%, #ffe8c8 100%);
+}
+
+.ticket-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ticket-badge {
+  border-radius: 999px;
+  background: rgba(143, 77, 37, 0.12);
+  color: #7b3d18;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.ticket-grid div,
+.reason-box {
+  border-radius: 20px;
+  background: rgba(255, 251, 245, 0.7);
+  padding: 16px;
+}
+
+.meta-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #93633f;
+}
+
+.ticket-grid strong {
+  color: #2f241d;
+}
+
+.reason-box p {
+  margin: 0;
+}
+
+@media (max-width: 820px) {
+  .page {
+    width: min(100% - 24px, 1100px);
+    padding: 28px 0 36px;
+  }
+
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .form-panel,
+  .ticket-panel {
+    padding: 22px;
+  }
+
+  .ticket-grid {
+    grid-template-columns: 1fr;
+  }
+}
