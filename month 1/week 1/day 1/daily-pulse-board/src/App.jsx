@@ -27,7 +27,7 @@ const pulseDetails = {
 };
 
 function App() {
-  const [selectedPulse, setSelectedPulse] = useState("focus");
+  const [selectedPulse, setSelectedPulse] = useState("steady");
   const [showTip, setShowTip] = useState(false);
 
   const currentPulse = pulseDetails[selectedPulse];

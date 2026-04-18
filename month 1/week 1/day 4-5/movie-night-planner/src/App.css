@@ -1,0 +1,278 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.hero {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(circle at top right, rgba(255, 205, 96, 0.45), transparent 28%),
+    linear-gradient(135deg, #241316, #4f1d24 55%, #7f2d2f);
+  color: #fff7eb;
+  box-shadow: 0 20px 45px rgba(36, 19, 22, 0.18);
+}
+
+.eyebrow,
+.section-label {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.panel h2,
+.empty-state h3,
+.movie-card h3,
+.coach-note h3 {
+  margin: 0;
+}
+
+.hero-copy,
+.section-copy,
+.movie-copy,
+.shortlist-item p,
+.empty-state p,
+.field span,
+.summary-card span {
+  margin: 0;
+  color: #5d4e51;
+}
+
+.hero-copy {
+  max-width: 42rem;
+  color: rgba(255, 247, 235, 0.86);
+}
+
+.summary-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.summary-card,
+.panel,
+.filter-bar,
+.movie-card {
+  border-radius: 1.25rem;
+  background: rgba(255, 249, 243, 0.95);
+  border: 1px solid rgba(115, 73, 52, 0.14);
+  box-shadow: 0 14px 28px rgba(64, 34, 18, 0.08);
+}
+
+.summary-card {
+  padding: 1rem 1.1rem;
+}
+
+.summary-card strong {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1.6rem;
+  color: #33191d;
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.field span {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #4e3335;
+}
+
+.field input,
+.field select,
+.primary-button,
+.secondary-button,
+.ghost-button {
+  font: inherit;
+}
+
+.field input,
+.field select {
+  padding: 0.85rem 0.95rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(115, 73, 52, 0.24);
+  background: #fff;
+  color: #2f1b1f;
+}
+
+.field input:focus,
+.field select:focus,
+.primary-button:focus,
+.secondary-button:focus,
+.ghost-button:focus {
+  outline: 3px solid rgba(204, 103, 66, 0.22);
+  outline-offset: 2px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.panel {
+  padding: 1.25rem;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.section-copy {
+  max-width: 20rem;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.movie-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card-top,
+.meta-row,
+.shortlist-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.pill,
+.meta-text {
+  font-size: 0.82rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+}
+
+.pill {
+  background: #fde5b6;
+  color: #6a3f0f;
+  font-weight: 700;
+}
+
+.meta-text {
+  background: #f5e7e2;
+  color: #7a4850;
+}
+
+.meta-row {
+  color: #5d4e51;
+  font-size: 0.95rem;
+}
+
+.primary-button,
+.secondary-button,
+.ghost-button {
+  border: none;
+  border-radius: 0.9rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+
+.primary-button {
+  background: #b94837;
+  color: #fff9f4;
+}
+
+.secondary-button {
+  background: #f7ddd4;
+  color: #6c2d25;
+}
+
+.ghost-button {
+  background: transparent;
+  color: #8a3f32;
+  border: 1px solid rgba(138, 63, 50, 0.2);
+}
+
+.shortlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.shortlist-item {
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(115, 73, 52, 0.12);
+}
+
+.shortlist-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #2f1b1f;
+}
+
+.empty-state {
+  padding: 1.2rem;
+  border-radius: 1rem;
+  background: #fff3e7;
+  color: #412428;
+}
+
+.empty-state--soft {
+  background: #fff8f2;
+}
+
+.coach-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #2f1b1f;
+  color: #fff7eb;
+}
+
+.coach-note ol {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .summary-strip,
+  .workspace,
+  .movie-grid,
+  .filter-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-heading {
+    flex-direction: column;
+  }
+
+  .section-copy {
+    max-width: none;
+  }
+}
