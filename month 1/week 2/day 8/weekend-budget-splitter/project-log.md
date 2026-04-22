@@ -31,11 +31,17 @@
 - [x] Calculated per-person split from `totalAmount / peopleCount`.
 - [x] Added category subtotal display using a helper function.
 - [x] Styled the app for desktop and mobile in `src/App.css` and `src/index.css`.
-- [ ] Student task: Open `src/App.jsx` and find where text input becomes a number with `Number.parseFloat()` and `Number.parseInt()`.
-- [ ] Student task: Change the starter data to match one real weekend plan you know.
-- [ ] Student task: Add one more category option and check whether the subtotal section updates correctly.
+- [x] Reviewed `src/App.jsx` and noted that `Number.parseInt()` is used for `splitCount`, while `Number.parseFloat()` is used inside `handleAddExpense` for the amount field.
+- [x] Updated the starter data to a more realistic `Yelagiri Road Trip` weekend plan.
+- [x] Added a new `Tickets` category option and confirmed it appears in the subtotal section through the starter data.
 
 ## Notes
 
 - Mentor note: Keep the total and split as derived values. Do not create extra state for them unless you truly need it.
 - Student note: Update this file after each meaningful change so your learning steps stay visible.
+
+## Latest Update
+
+- Date: 2026-04-22
+- Completed the remaining log tasks by tracing the number parsing logic, refreshing the starter expenses, and extending the category list.
+- New starter subtotal to notice: `Tickets` now appears because the starter data includes `Adventure park entry`.

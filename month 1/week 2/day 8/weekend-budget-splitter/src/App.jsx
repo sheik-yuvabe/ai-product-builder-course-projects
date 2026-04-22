@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 
-const CATEGORY_OPTIONS = ['Travel', 'Food', 'Stay', 'Fun', 'Other']
+const CATEGORY_OPTIONS = ['Travel', 'Food', 'Stay', 'Fun', 'Tickets', 'Other']
 
 const starterExpenses = [
-  { id: 1, title: 'Fuel for the car', category: 'Travel', amount: 1800 },
-  { id: 2, title: 'Snacks and drinks', category: 'Food', amount: 950 },
-  { id: 3, title: 'Beach games', category: 'Fun', amount: 600 },
+  { id: 1, title: 'Petrol for the drive', category: 'Travel', amount: 2200 },
+  { id: 2, title: 'Resort room advance', category: 'Stay', amount: 4800 },
+  { id: 3, title: 'Dinner at the food court', category: 'Food', amount: 1650 },
+  { id: 4, title: 'Adventure park entry', category: 'Tickets', amount: 1200 },
 ]
 
 const initialExpenseForm = {
@@ -30,7 +31,7 @@ function getCategoryTotal(expenses, category) {
 }
 
 function App() {
-  const [tripName, setTripName] = useState('Weekend with friends')
+  const [tripName, setTripName] = useState('Yelagiri Road Trip')
   const [splitCount, setSplitCount] = useState('4')
   const [expenseForm, setExpenseForm] = useState(initialExpenseForm)
   const [expenses, setExpenses] = useState(starterExpenses)
@@ -98,7 +99,7 @@ function App() {
   }
 
   function handleResetDemo() {
-    setTripName('Weekend with friends')
+    setTripName('Yelagiri Road Trip')
     setSplitCount('4')
     setExpenseForm(initialExpenseForm)
     setExpenses(starterExpenses)
