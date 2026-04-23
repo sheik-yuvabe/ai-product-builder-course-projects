@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Avenir Next', sans-serif;
+  color: #204252;
+  background: #f8fbfd;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+p {
+  line-height: 1.55;
+}
+
+#root {
+  min-height: 100vh;
+}
